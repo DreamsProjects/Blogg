@@ -1,0 +1,22 @@
+﻿@model EmmasBlogg.Models.Kategori
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{ 
+    <form asp-controller="Kategoris" asp-action="Index" role="form">
+        <div class="form-group">
+            <div class="row">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-4" >
+
+                <label asp-for="Namn" class="control-label"></label>
+                    <select asp-for="KategoriID" class="form-control" 
+                            asp-items="@(new SelectList(ViewBag.ListaMedKategorier, "KategoriID", "Namn"))"></select>
+                </div>
+            </div>
+        <div/>
+    </form>
+
+}

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<EmmasBlogg.Models.Inlägg>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Sök</h1>
+
+
+<form asp-controller="Inlägg" method="Search">
+        <p>
+            Titel: &emsp;&ensp;&nbsp;<input type="text" name="titel" />
+            <input type="submit" value="Sök" name="titel" />
+        </p>
+    </form>
+
+<form asp-controller="Inlägg" method="SearchC">
+    <p>
+        Kategori: <input type="text" name="titel" />
+        <input type="submit" value="Sök" />
+    </p>
+</form>
+
+
+
+<h4>Befintliga inlägg</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Titel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => @model.Kategori.Namn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Titel)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Datum)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.Kategori.Namn)
+                </td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.InläggsID">Detaljerad läsning</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

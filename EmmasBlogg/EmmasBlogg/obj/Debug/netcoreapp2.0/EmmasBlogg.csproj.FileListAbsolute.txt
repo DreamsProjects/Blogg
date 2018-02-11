@@ -1,0 +1,11 @@
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\bin\Debug\netcoreapp2.0\EmmasBlogg.deps.json
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\bin\Debug\netcoreapp2.0\EmmasBlogg.runtimeconfig.json
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\bin\Debug\netcoreapp2.0\EmmasBlogg.runtimeconfig.dev.json
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\bin\Debug\netcoreapp2.0\EmmasBlogg.dll
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\bin\Debug\netcoreapp2.0\EmmasBlogg.pdb
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.csprojResolveAssemblyReference.cache
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.csproj.CoreCompileInputs.cache
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.AssemblyInfoInputs.cache
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.AssemblyInfo.cs
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.dll
+C:\Users\emma\source\repos\EmmasBlogg\EmmasBlogg\obj\Debug\netcoreapp2.0\EmmasBlogg.pdb

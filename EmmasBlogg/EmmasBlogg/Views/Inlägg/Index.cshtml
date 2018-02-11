@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EmmasBlogg.Models.Inlägg>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Meny</h2>
+
+<p>
+    <a asp-action="Create">Skapa nytt inlägg</a>
+    <br/>
+    <a asp-action="Search">Till söknings sidan</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Datum)
+                </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InläggsID">Ändra</a> |
+                <a asp-action="Details" asp-route-id="@item.InläggsID">Detaljerad läsning</a> |
+                <a asp-action="Delete" asp-route-id="@item.InläggsID">Ta bort</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+﻿@model EmmasBlogg.Models.Inlägg
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!--HTML -kod för start hemsidan-->
+
+<h2>Hej och välkommen till min blogg</h2>
+<a asp-controller="Inlägg" asp-action="Index">Till inlägg</a>
+<br/>
+<a asp-controller="Inlägg" asp-action="Search">Till söknings sidan</a>

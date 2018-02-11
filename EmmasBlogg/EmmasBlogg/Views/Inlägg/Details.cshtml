@@ -1,0 +1,51 @@
+﻿@model EmmasBlogg.Models.Inlägg
+
+    
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inlägg</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Datum)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Datum)
+        </dd>
+        <dt>
+
+            @Html.DisplayNameFor(model => @model.Kategori.Namn)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => @model.Kategori.Namn)
+        </dd>
+    </dl>
+</div>
+
+
+
+
+
+<div>
+    <a asp-action="Index">Till meny sidan</a>
+    <br />
+    <a asp-action="Search">Till söknings sidan</a>
+</div>
